@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<style>
+body {
+	position: relative;
+}
+/* #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}   */
+#section2 {
+	padding-top: 50px;
+	height: 500px;
+	color: #1D401D;
+	background-color: #FC7255;
+}
+
+#section3 {
+	padding-top: 50px;
+	height: 500px;
+	color: #1D401D;
+	background-color: #FCCC55;
+}
+
+#section41 {
+	padding-top: 50px;
+	height: 500px;
+	color: #fff;
+	background-color: #DAF7A6;
+}
+
+#section42 {
+	padding-top: 50px;
+	height: 500px;
+	color: #fff;
+	background-color: #009688;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 250%;
+	margin: auto;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Chitranjali Wedding Studio</a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#section1">Our Photography</a></li>
+						<li><a href="#section2">Cotact Us</a></li>
+						<li><a href="#section3">Our Team</a></li>
+						<li class="dropdown"><a class="dropdown-toggle"
+							data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#section41">Section 4-1</a></li>
+								<li><a href="#section42">Section 4-2</a></li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="section1" class="container-fluid">
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="images/one.jpg" alt="jokes 1">
+				</div>
+
+				<div class="item">
+					<img src="images/two.jpg" alt="jokes 2">
+				</div>
+
+				<div class="item">
+					<img src="images/three.jpg" alt="jokes 3">
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button"
+				data-slide="prev"> <span
+				class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a> <a class="right carousel-control" href="#myCarousel" role="button"
+				data-slide="next"> <span
+				class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<div id="section2" class="container-fluid ">
+		<!-- <div class="jumbotron"> -->
+		<h1>CONTACT DETAILS</h1>
+		<table
+			style="margin:; border: medium; border-bottom-right-radius: 10px;">
+
+			<tr>
+				<th>Call</th>
+
+
+				<!-- <th>Canvera Link</th>
+				<th>Other Contact</th> -->
+
+			</tr>
+			<tr>
+
+				<td>+91 98042 17147</td>
+
+
+			</tr>
+			<tr>
+				<th>Mail Address</th>
+
+			</tr>
+			<tr>
+
+				<td>chitranjalistudio1@gmail.com</td>
+
+			</tr>
+
+		</table>
+		<div class="container=fluid">
+			<h2>Customer Information</h2>
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+				data-target="#myModal">Submit Preferences</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">Close×</button>
+							<h4 class="modal-title">Input Preferences</h4>
+						</div>
+						<div class="modal-body">
+							<p>Customer Details</p>
+							<table>
+
+								<tr>
+									<th>First Name</th>
+									<td><input type="text"></td>
+
+								</tr>
+								<!-- <tr>
+
+				<td>+91 98042 17147</td>
+
+
+			</tr>
+			<tr>
+				<th>Mail Address</th>
+
+			</tr>
+			<tr>
+
+				<td>chitranjalistudio1@gmail.com</td>
+
+			</tr> -->
+
+							</table>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default"
+								data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="section3" class="container-fluid">
+		<h1>Our Team</h1>
+		<table class="table">
+
+			<!-- <tr>
+			<th>Images</th><th>Mail Address</th><th>Contact</th>
+				
+			</tr> -->
+
+			<tr>
+				<td><img class="img-responsive" src="images/five.JPG" alt=""
+					width="260" height="90"></td>
+				<td>chitranjalistudio1@gmail.com</td>
+				<td>https://photographers.canvera.com/east/west-bengal/
+					kolkata/chitranjali-studio</td>
+			</tr>
+
+		</table>
+		<!-- <img class="img-responsive" src="images/five." alt="" width="460" height="345"> -->
+
+
+
+	</div>
+	<div id="section41" class="container-fluid">
+		<h1>Section 4 Submenu 1</h1>
+		<p>Try to scroll this section and look at the navigation bar while
+			scrolling! Try to scroll this section and look at the navigation bar
+			while scrolling!</p>
+		<p>Try to scroll this section and look at the navigation bar while
+			scrolling! Try to scroll this section and look at the navigation bar
+			while scrolling!</p>
+	</div>
+	<div id="section42" class="container-fluid">
+		<h1>Section 4 Submenu 2</h1>
+		<p>Try to scroll this section and look at the navigation bar while
+			scrolling! Try to scroll this section and look at the navigation bar
+			while scrolling!</p>
+		<p>Try to scroll this section and look at the navigation bar while
+			scrolling! Try to scroll this section and look at the navigation bar
+			while scrolling!</p>
+	</div>
+	<!-- FOOTER -->
+	<footer>
+		<p class="float-right">
+			<a href="#">Back to top</a>
+		</p>
+		<p>
+			&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a
+				href="#">Terms</a>
+		</p>
+	</footer>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
